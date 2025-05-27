@@ -1,11 +1,12 @@
 # Hpc-MATILDA-for-LLMs
 ## HPC Access Setup Guide
+![HPC Setup Screenshot](./assets/hpc_setup.png)
 
 This guide explains how to configure and access a High-Performance Computing (HPC) environment using **MobaXterm**.
 
 ---
 
-### 🖥 Step 1: Download MobaXterm
+### So, firstly, Download MobaXterm
 
 Download and install **MobaXterm** (a Windows SSH client with built-in X server):
 
