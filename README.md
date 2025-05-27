@@ -20,16 +20,16 @@ Welcome to this repository! This guide will help you get started with accessing 
 
 ---
 Lets Go(-_-)
-<p style="color:red"><strong>This guide explains how to configure and access a High-Performance Computing (HPC) environment using MobaXterm.</strong></p>
-
-
+This guide explains how to configure and access a High-Performance Computing (HPC) environment using **MobaXterm**.
 ---
 
-### So, firstly, Download MobaXterm
+**HPC Access Setup Guide*
+### Step 1: Download MobaXterm
 
 Download and install **MobaXterm** (a Windows SSH client with built-in X server):
 
 - 📥 [Download MobaXterm Home Edition (Installer)](https://mobaxterm.mobatek.net/download-home-edition.html)
+![Jupyter LLM on HPC](https://drive.google.com/uc?export=view&id=1-9d6RBBVbpWZh-AdsrkZfnjBxaiRMv2K)
 
 ---
 
