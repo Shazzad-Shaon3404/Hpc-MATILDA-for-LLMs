@@ -38,9 +38,10 @@ Download and install **MobaXterm** (a Windows SSH client with built-in X server)
 1. **Open MobaXterm**
 2. Click on `Session` > `SSH`
 3. Fill in the following:
-   - **Remote host**: `hpc-login-p01.oakland.edu` *(or your university's HPC login node)*
-   - **Specify username**: `your_netid`
-4. Click **OK** to save and connect.
+   - **Remote host**: `hpc-login.oakland.edu` *(or your university's HPC login node)*
+   - **Specify username**: `your_netid` *(Example your netid: SamuraiX so put SamuraiX only)*
+4. Click **OK** to save and connect based on the Figure.
+![HPC Jupyter Access](https://drive.google.com/uc?export=view&id=1K_rO4MbPJIASB60p-SkIMQYLYGjAU7Rg)
 
 ---
 
