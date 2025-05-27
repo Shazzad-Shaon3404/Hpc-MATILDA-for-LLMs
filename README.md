@@ -2,8 +2,6 @@
 ## HPC Access Setup Guide
 ## HPC Connection Setup
 
-You can follow this image as a reference when setting up your MobaXterm SSH session:
-
 ![HPC MobaXterm Setup](https://drive.google.com/uc?export=view&id=11Igi8Q8qfuhT5UM3dX9_P7WrQs16xKKa)
 
 
