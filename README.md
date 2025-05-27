@@ -1,11 +1,27 @@
 # Hpc-MATILDA-for-LLMs
-## HPC Access Setup Guide
-## HPC Connection Setup
-
 ![HPC MobaXterm Setup](https://drive.google.com/uc?export=view&id=11Igi8Q8qfuhT5UM3dX9_P7WrQs16xKKa)
 
+#  HPC & LLM Setup Guide
 
-This guide explains how to configure and access a High-Performance Computing (HPC) environment using **MobaXterm**.
+Welcome to this repository! This guide will help you get started with accessing a High-Performance Computing (HPC) cluster and running Large Language Models (LLMs) using Jupyter Notebook or JupyterLab.
+
+---
+
+##  What This Repository Covers
+
+- ✅ **HPC Access Setup Guide**  
+  Step-by-step instructions to install and use MobaXterm for accessing your university’s HPC system.
+
+- ✅ **HPC Connection Setup**  
+  Visual and written guide to initiate SSH sessions, upload files, and interact with the HPC environment.
+
+- ✅ **Running LLMs on HPC via Jupyter**  
+  Instructions on how to launch and run Jupyter Notebook or JupyterLab in the HPC environment to fine-tune and run LLMs (e.g., CodeT5, GraphCodeBERT).
+
+---
+Lets Go(-_-)
+<p style="color:red"><strong>This guide explains how to configure and access a High-Performance Computing (HPC) environment using MobaXterm.</strong></p>
+
 
 ---
 
