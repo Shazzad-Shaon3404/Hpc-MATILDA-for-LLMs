@@ -78,3 +78,59 @@ So now you are in Log in page----- Lets Go for how to download or install jupyte
 (base) [s@hpc-login-p01 ~]$ cd S
 
 (base) [s@hpc-login-p01 S]$
+
+After logging into the MATILDA HPCC, the ~ symbol indicates you're in your home directory.
+
+Running ls lists the contents of the home directory. In this case, the contents are:
+
+A folder named S
+
+
+Then----
+
+# Load conda/anaconda module
+module load miniconda3    # or `module load conda` depending on your system
+
+# Create conda environment (only once)
+conda create -y -n myenv python=3.10
+
+# Activate it
+conda activate myenv
+
+# Notebook installation
+pip install jupyter notebook
+after installation press <-- frim your keybord arrow and then press q
+Then--- 
+
+
+
+
+After logging into the HPC, run the following command to request a GPU node:
+
+
+1. Command: srun -t 1-00:00:00 --gres=gpu:1 --pty bash
+
+   **NOTE: --gres=gpu:1 allocates 1 GPU.
+You can change it to gpu:2 or gpu:3 to request more GPUs if allowed.**
+
+3. Command: conda activate myenv
+4. Command:  jupyter lab --no-browser --ip=0.0.0.0 --port=9000
+5. Open Windows Terminal (not MobaXterm).    --Search windows taskbar and search terminal
+6. Run the following command to create an SSH tunnel in  Windows Terminal :  ssh -N -L 9000:hpc-gpu-p03:9000 samuraix@hpc-login.oakland.edu
+ **NOTE :🔁 Replace shaon with your actual NetID.**
+**🔐 Enter your password when prompted.**
+7. Copy the full URL with the token from Step MobaXtrem based on the Figure (GREEN highlight).
+![Project Folder Structure](https://drive.google.com/uc?export=view&id=1H8ZCoVirfx55XJ3ftTlOqmS-rRcxGZOU)
+
+
+8. Paste it into your browser.
+
+🎉 Boom! JupyterLab is now running on the MATILDA HPCC with GPU support.
+
+![Example Output](https://drive.google.com/uc?export=view&id=1S5Jdj8FBmSMKmbZk4pbYeP5ea_EDP5jp)
+
+
+
+
+
+ 
