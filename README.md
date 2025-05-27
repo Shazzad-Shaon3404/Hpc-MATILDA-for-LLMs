@@ -12,7 +12,7 @@ Welcome to this repository! This guide will help you get started with accessing 
 - ✅ **HPC Access Setup Guide**  
   Step-by-step instructions to install and use MobaXterm for accessing your university’s HPC system.
 
-- ✅ **HPC Connection Setup**  
+- ✅ **HPC LOGIN Setup**  
   Visual and written guide to initiate SSH sessions, upload files, and interact with the HPC environment.
 
 - ✅ **Running LLMs on HPC via Jupyter**  
@@ -33,25 +33,48 @@ Download and install **MobaXterm** (a Windows SSH client with built-in X server)
 
 ---
 
-### 🔐 Step 2: Connect to HPC
+### Step 2: Connect to HPC
 
 1. **Open MobaXterm**
 2. Click on `Session` > `SSH`
 3. Fill in the following:
    - **Remote host**: `hpc-login.oakland.edu` *(or your university's HPC login node)*
-   - **Specify username**: `your_netid` *(Example your netid: SamuraiX so put SamuraiX only)*
+   - **click  this--✅--- before the Specify username**: then type `your_netid` *(Example your netid: SamuraiX so put SamuraiX only)*
 4. Click **OK** to save and connect based on the Figure.
 ![HPC Jupyter Access](https://drive.google.com/uc?export=view&id=1K_rO4MbPJIASB60p-SkIMQYLYGjAU7Rg)
 
 ---
+**HPC LOGIN Setup**
+### Step 1: Connect to LogIN page
+1. Run the following SSH command in your terminal or MobaXterm:  ssh <NetId>@hpc-login.oakland.edu  write example ( your netid : samuraiX@oakland.edu so you have to write ssh samuraiX@hpc-login.oakland.edu)
+2. When prompted, enter your password.
+Note: The password will not appear as you type — this is normal. Just make sure to enter it correctly and press Enter.
+3. After logging in successfully, you will see a URL — either displayed above or below the login message. Simply copy the URL and paste it into your browser to proceed.
+4. After opening the URL in your browser, you will be prompted to set up Duo Two-Factor Authentication.
 
-### 📦 Step 3: Upload Dataset or Files
+-First, download the Duo Mobile app on your smartphone. It is available for both iPhone and Android.
 
-You can upload files via:
-- MobaXterm’s built-in **SCP browser** (left panel after connecting), or
-- Use the command line after downloading from Google Drive:
+-On your laptop, click the option that says “I have downloaded the app”.
 
-```bash
-# Example: Download a Google Drive file directly using gdown (if available)
-pip install gdown
-gdown --id 11Igi8Q8qfuhT5UM3dX9_P7WrQs16xKKa
+-Before proceeding, you must enter your U.S.-based phone number on the website.
+
+-Then, open the Duo Mobile app on your phone, tap “Add Account”, and select “Use QR Code”.
+
+-Scan the QR code shown on your laptop screen using your phone.
+
+-Once the QR code is scanned successfully, your Duo setup is complete. 
+- According to the image, you need to click on "Passcode" and select a number between 1 and 3 — just a single digit. For example, if you click 3, you will receive an SMS on your phone. At the same time, the Duo Mobile app will show two options: Approve or Reject. Then type the SMS code based on the second fig. 
+Tap Approve to complete the authentication process.
+![Duo QR Code Setup](https://drive.google.com/uc?export=view&id=1ftAgu9teK5rDHRnpTCgNhHE0z1Yc_fn4)
+![Duo Authentication Example](https://drive.google.com/uc?export=view&id=1LBJxwfPyMVoJPn_YumUi7FBsTmE3Z-gY)
+
+**🎉 Login successful! Welcome to the MATILDA HPCC.**
+---
+**Running LLMs on HPC via Jupyter**
+So now you are in Log in page----- Lets Go for how to download or install jupyter
+(base) [s@hpc-login-p01 ~]$ ls
+ S  'secrypt 2025.pdf'   shaon
+
+(base) [s@hpc-login-p01 ~]$ cd S
+
+(base) [s@hpc-login-p01 S]$
