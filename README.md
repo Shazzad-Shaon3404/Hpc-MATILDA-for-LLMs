@@ -79,11 +79,9 @@ So now you are in Log in page----- Lets Go for how to download or install jupyte
 
 
 
-After logging into the MATILDA HPCC, the `ls`~ symbol indicates you're in` your home directory`.
-
+After logging into the MATILDA HPCC, the `ls`~ symbol indicates you're in` your home directory`. 
 Running ls lists the contents of the home directory. In this case, the contents are:
-
-A folder named` S`
+A folder named `S`
 ---
 
 Then----
