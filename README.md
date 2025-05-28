@@ -19,11 +19,11 @@ Welcome to this repository! This guide will help you get started with accessing 
   Instructions on how to launch and run Jupyter Notebook or JupyterLab in the HPC environment to fine-tune and run LLMs (e.g., CodeT5, GraphCodeBERT).
 
 ---
-Lets Go(-_-)
+Lets Go(-_-) <br>
 This guide explains how to configure and access a High-Performance Computing (HPC) environment using **MobaXterm**.
 ---
 
-**HPC Access Setup Guide*
+**HPC Access Setup Guide**
 ### Step 1: Download MobaXterm
 
 Download and install **MobaXterm** (a Windows SSH client with built-in X server):
@@ -39,7 +39,7 @@ Download and install **MobaXterm** (a Windows SSH client with built-in X server)
 2. Click on `Session` > `SSH`
 3. Fill in the following:
    - **Remote host**: `hpc-login.oakland.edu` *(or your university's HPC login node)*
-   - **click  this--✅--- before the Specify username**: then type `your_netid` *(Example your netid: SamuraiX so put SamuraiX only)*
+   - **click  this--✅--- before the Specify username**: then type `your_netid` *(Example your netid: SamuraiX@oakland.edu so put SamuraiX only)*
 4. Click **OK** to save and connect based on the Figure.
 ![HPC Jupyter Access](https://drive.google.com/uc?export=view&id=1K_rO4MbPJIASB60p-SkIMQYLYGjAU7Rg)
 
@@ -95,10 +95,10 @@ module load miniconda3    # or `module load conda` depending on your system
 conda create -y -n myenv python=3.10
 
 # Activate it
-conda activate myenv
+`conda activate myenv`
 
 # Notebook installation
-pip install jupyter notebook
+`pip install jupyter notebook`
 after installation press <-- frim your keybord arrow and then press q
 Then--- 
 
@@ -108,15 +108,18 @@ Then---
 After logging into the HPC, run the following command to request a GPU node:
 
 
-1. Command: srun -t 1-00:00:00 --gres=gpu:1 --pty bash
+1. Command:` srun -t 1-00:00:00 --gres=gpu:1 --pty bash` <br>
 
    **NOTE: --gres=gpu:1 allocates 1 GPU.
+
+
+   
 You can change it to gpu:2 or gpu:3 to request more GPUs if allowed.**
 
-3. Command: conda activate myenv
-4. Command:  jupyter lab --no-browser --ip=0.0.0.0 --port=9000
+3. Command: `conda activate myenv`
+4. Command:  `jupyter lab --no-browser --ip=0.0.0.0 --port=9000`
 5. Open Windows Terminal (not MobaXterm).    --Search windows taskbar and search terminal
-6. Run the following command to create an SSH tunnel in  Windows Terminal :  ssh -N -L 9000:hpc-gpu-p03:9000 samuraix@hpc-login.oakland.edu
+6. Run the following command to create an SSH tunnel in  Windows Terminal :  `ssh -N -L 9000:hpc-gpu-p03:9000 samuraix@hpc-login.oakland.edu`
  **NOTE :🔁 Replace shaon with your actual NetID.**
 **🔐 Enter your password when prompted.**
 7. Copy the full URL with the token from Step MobaXtrem based on the Figure (GREEN highlight).
